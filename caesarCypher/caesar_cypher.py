@@ -1,8 +1,8 @@
-def caesarEncrypt(message, key=0):
+def caesarEncrypt(text, key=0):
     # Initialize encrypted string
     encrypted = ""
 
-    for i in range(len(message)):
+    for i in range(len(text)):
         char = message[i]
 
         if (65 <= ord(char) <= 90):     # Check for uppercase 
@@ -13,11 +13,11 @@ def caesarEncrypt(message, key=0):
             encrypted += char
     return encrypted
 
-def caesarDecrypt(message, key=0):
+def caesarDecrypt(text, key=0):
     # Initialize decrypted string
     decrypted = ""
 
-    for i in range(len(message)):
+    for i in range(len(text)):
         char = message[i]
 
         if (65 <= ord(char) <= 90):     # Check for uppercase 
@@ -27,3 +27,8 @@ def caesarDecrypt(message, key=0):
         else:                           # Every other symbol
             decrypted += char
     return decrypted
+
+def caesarForceDecrypt(text):
+    for i in range(26):
+        result = caesarDecrypt(text, i)
+        print(f"Key={i}: {result}")
