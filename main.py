@@ -1,4 +1,4 @@
-from caesarCypher import caesarEncrypt, caesarDecrypt
+from caesarCypher import caesarEncrypt, caesarDecrypt, caesarForceDecrypt
 
 running = True
 key = 0
@@ -29,7 +29,8 @@ while running:
             result = caesarDecrypt(text, key)
             print(f"Decryption: {result}")
         case 4:
-            print("Not yet implemented.")
+            text = input("Write the text you want to force decrypt: ")
+            caesarForceDecrypt(text)
         case 5:
             running = False
             print("Closing programme.")
