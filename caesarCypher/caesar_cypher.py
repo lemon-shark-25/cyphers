@@ -14,7 +14,7 @@ def caesarEncrypt(message, key=0):
     return encrypted
 
 def caesarDecrypt(message, key=0):
-    # Initialize encrypted string
+    # Initialize decrypted string
     decrypted = ""
 
     for i in range(len(message)):
