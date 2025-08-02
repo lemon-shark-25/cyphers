@@ -1,6 +1,6 @@
 import random
 
-class SubsCypher:
+class SubstitutionCypher:
     def __init__(self):
         self._alphabet = [chr(i) for i in range(ord('A'), ord('Z') + 1)]
         self._encryptKey = self.genEncryptKey()
