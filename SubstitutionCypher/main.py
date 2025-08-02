@@ -1,10 +1,10 @@
-from substitutionCypher import SubsCypher 
+from substitutionCypher import SubstitutionCypher 
 
 running = True
 option = 0
 text = ""
 result = ""
-cypher = SubsCypher()
+cypher = SubstitutionCypher()
 
 def menu():
     print("--- Substitution cypher ---")
