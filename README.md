@@ -3,5 +3,5 @@
 
  - [x] *Shift cypher*: The original Caesar cypher used the key 3 for encrypting messages.
  - [x] *Substitution cypher*: Stronger than a shift cypher.
- - [ ] *Frecuency analysis utility*
+ - [x] *Frecuency analysis utility*
  - [ ] *Vigenère cypher*
